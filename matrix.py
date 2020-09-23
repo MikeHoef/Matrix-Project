@@ -2,8 +2,8 @@ import itertools
 import time
 import random
 import os.path
-
-
+import matrix_draw
+import graphviz
 
 
 class matrix:
@@ -13,8 +13,8 @@ class matrix:
         n = len(rows)
         m = len(rows[0]) - 1
         self.rows = rows
-        self.columns = [[rows[j][i] for j in xrange(n)] for i in xrange(m)]
-        self.right_column = [rows[j][m] for j in xrange(n)]
+        self.columns = [[rows[j][i] for j in range(n)] for i in range(m)]
+        self.right_column = [rows[j][m] for j in range(n)]
         self.interpretation_type = [max(row) + 1 for row in rows]
         self.n = n
         self.m = m
@@ -43,10 +43,10 @@ class matrix:
         return hash(tuple(tuple(r) for r in self.rows))
 
     def rows_lexi(self):
-        return all(self.rows[i][:self.m] <= self.rows[i+1][:self.m] for i in xrange(self.n-1))
+        return all(self.rows[i][:self.m] <= self.rows[i+1][:self.m] for i in range(self.n-1))
 
     def cols_lexi(self):
-        return all(self.columns[i] <= self.columns[i+1] for i in xrange(self.m-1))
+        return all(self.columns[i] <= self.columns[i+1] for i in range(self.m-1))
 
     def double_lexi(self):
         return self.rows_lexi() and self.cols_lexi()
@@ -56,16 +56,16 @@ class matrix:
 
     def is_trivial(self):
 
-        funcs = itertools.product(*[hom(self.interpretation_type[i] + 1, 2) for i in xrange(self.n)])
+        funcs = itertools.product(*[hom(self.interpretation_type[i] + 1, 2) for i in range(self.n)])
         num_cols = self.m + 1
 
         for f in funcs:
-            interpretation = matrix([[f[i][self.rows[i][j]] for j in xrange(num_cols)] for i in xrange(self.n)])
+            interpretation = matrix([[f[i][self.rows[i][j]] for j in range(num_cols)] for i in range(self.n)])
             if interpretation.is_lextop():
                 continue
             else:
-                for i in xrange(interpretation.n):
-                    for j in xrange(i + 1, self.n):
+                for i in range(interpretation.n):
+                    for j in range(i + 1, self.n):
                         if interpretation.rows[i][:self.m] == interpretation.rows[j][:self.m] and not interpretation.rows[i][self.m] == interpretation.rows[j][self.m]:
                             return True
         return False
@@ -74,15 +74,15 @@ class matrix:
         return [0] * (self.m + 1) in self.rows
 
     def has_duplicate_rows(self):
-        for i in xrange(self.n):
-            for j in xrange(i + 1, self.n):
+        for i in range(self.n):
+            for j in range(i + 1, self.n):
                 if self.rows[i] == self.rows[j]:
                     return True
         return False
 
 # helper methods.
 def hom(k, n):
-    return list(itertools.product(xrange(n), repeat=k))
+    return list(itertools.product(range(n), repeat=k))
 
 # mslex methods.
 def implies(N,M):
@@ -95,16 +95,16 @@ def implies(N,M):
 
         for reduct in hom(M.n, N.n):
 
-            reduction = matrix([N.rows[reduct[i]] for i in xrange(M.n)])
+            reduction = matrix([N.rows[reduct[i]] for i in range(M.n)])
 
             if reduction.is_lextop():
                 continue
 
-            interpretation_funcs = itertools.product(*[hom(reduction.interpretation_type[i], M.interpretation_type[i]) for i in xrange(M.n)])
+            interpretation_funcs = itertools.product(*[hom(reduction.interpretation_type[i], M.interpretation_type[i]) for i in range(M.n)])
 
             for f in interpretation_funcs:
 
-                interpretation = matrix([[f[i][reduction.rows[i][j]] for j in xrange(reduction.m + 1)] for i in xrange(reduction.n)])
+                interpretation = matrix([[f[i][reduction.rows[i][j]] for j in range(reduction.m + 1)] for i in range(reduction.n)])
 
                 if interpretation.is_lextop():
                     continue
@@ -294,10 +294,22 @@ def read_in_matrices(file):
             i = i + j
     return Matrices
 
-# --- main ---
-T = time.time()
-L    = mslex(3,6,3)
-print(time.time() - T)
-for m in L:
-    print(m)
-print(len(L))
+def hasse(Matrices):
+    n = len(Matrices)
+    rels = []
+    for i in range(n):
+        for j in range(n):
+            if not i == j:
+                if implies(Matrices[i], Matrices[j]):
+                    rels.append((i,j))
+    return graphviz.Source(matrix_draw.graphviz_hasse(Matrices, rels))
+
+
+M = matrix([[1,1,0,2,2,0], [0,0,1,1,0,0], [2,0,1,2,1,0]])
+
+Matrices = mslex(3,5,3)
+
+for m in Matrices:
+    if equivalent(m, M):
+        print(m)
+        break

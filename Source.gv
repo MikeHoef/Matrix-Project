@@ -1,0 +1,68 @@
+digraph G{
+ node [shape=plaintext] 
+ 
+ rankdir="LR" 
+
+0 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"> 
+<TR><TD BGCOLOR="white">   </TD><TD BGCOLOR="black">   </TD><TD BGCOLOR="black">   </TD></TR> 
+<TR><TD BGCOLOR="black">   </TD><TD BGCOLOR="white">   </TD><TD BGCOLOR="black">   </TD></TR> 
+</TABLE>>]; 
+1 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"> 
+<TR><TD BGCOLOR="white">   </TD><TD BGCOLOR="white">   </TD><TD BGCOLOR="black">   </TD></TR> 
+<TR><TD BGCOLOR="white">   </TD><TD BGCOLOR="black">   </TD><TD BGCOLOR="white">   </TD></TR> 
+<TR><TD BGCOLOR="black">   </TD><TD BGCOLOR="white">   </TD><TD BGCOLOR="white">   </TD></TR> 
+</TABLE>>]; 
+2 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"> 
+<TR><TD BGCOLOR="white">   </TD><TD BGCOLOR="white">   </TD><TD BGCOLOR="black">   </TD></TR> 
+<TR><TD BGCOLOR="white">   </TD><TD BGCOLOR="black">   </TD><TD BGCOLOR="black">   </TD></TR> 
+<TR><TD BGCOLOR="black">   </TD><TD BGCOLOR="white">   </TD><TD BGCOLOR="black">   </TD></TR> 
+</TABLE>>]; 
+3 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"> 
+<TR><TD BGCOLOR="white">   </TD><TD BGCOLOR="black">   </TD><TD BGCOLOR="black">   </TD></TR> 
+<TR><TD BGCOLOR="black">   </TD><TD BGCOLOR="white">   </TD><TD BGCOLOR="black">   </TD></TR> 
+<TR><TD BGCOLOR="black">   </TD><TD BGCOLOR="black">   </TD><TD BGCOLOR="white">   </TD></TR> 
+</TABLE>>]; 
+4 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"> 
+<TR><TD BGCOLOR="white">   </TD><TD BGCOLOR="white">   </TD><TD BGCOLOR="white">   </TD><TD BGCOLOR="black">   </TD></TR> 
+<TR><TD BGCOLOR="white">   </TD><TD BGCOLOR="black">   </TD><TD BGCOLOR="black">   </TD><TD BGCOLOR="white">   </TD></TR> 
+<TR><TD BGCOLOR="black">   </TD><TD BGCOLOR="white">   </TD><TD BGCOLOR="black">   </TD><TD BGCOLOR="white">   </TD></TR> 
+</TABLE>>]; 
+5 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"> 
+<TR><TD BGCOLOR="white">   </TD><TD BGCOLOR="white">   </TD><TD BGCOLOR="black">   </TD><TD BGCOLOR="black">   </TD></TR> 
+<TR><TD BGCOLOR="white">   </TD><TD BGCOLOR="black">   </TD><TD BGCOLOR="white">   </TD><TD BGCOLOR="black">   </TD></TR> 
+<TR><TD BGCOLOR="black">   </TD><TD BGCOLOR="white">   </TD><TD BGCOLOR="white">   </TD><TD BGCOLOR="black">   </TD></TR> 
+</TABLE>>]; 
+6 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"> 
+<TR><TD BGCOLOR="white">   </TD><TD BGCOLOR="white">   </TD><TD BGCOLOR="black">   </TD><TD BGCOLOR="black">   </TD></TR> 
+<TR><TD BGCOLOR="white">   </TD><TD BGCOLOR="black">   </TD><TD BGCOLOR="white">   </TD><TD BGCOLOR="black">   </TD></TR> 
+<TR><TD BGCOLOR="black">   </TD><TD BGCOLOR="white">   </TD><TD BGCOLOR="white">   </TD><TD BGCOLOR="red">   </TD></TR> 
+</TABLE>>]; 
+7 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"> 
+<TR><TD BGCOLOR="white">   </TD><TD BGCOLOR="white">   </TD><TD BGCOLOR="black">   </TD><TD BGCOLOR="black">   </TD></TR> 
+<TR><TD BGCOLOR="white">   </TD><TD BGCOLOR="black">   </TD><TD BGCOLOR="white">   </TD><TD BGCOLOR="black">   </TD></TR> 
+<TR><TD BGCOLOR="black">   </TD><TD BGCOLOR="white">   </TD><TD BGCOLOR="red">   </TD><TD BGCOLOR="black">   </TD></TR> 
+</TABLE>>]; 
+8 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"> 
+<TR><TD BGCOLOR="white">   </TD><TD BGCOLOR="white">   </TD><TD BGCOLOR="black">   </TD><TD BGCOLOR="black">   </TD></TR> 
+<TR><TD BGCOLOR="white">   </TD><TD BGCOLOR="black">   </TD><TD BGCOLOR="white">   </TD><TD BGCOLOR="black">   </TD></TR> 
+<TR><TD BGCOLOR="black">   </TD><TD BGCOLOR="red">   </TD><TD BGCOLOR="red">   </TD><TD BGCOLOR="white">   </TD></TR> 
+</TABLE>>]; 
+9 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"> 
+<TR><TD BGCOLOR="white">   </TD><TD BGCOLOR="white">   </TD><TD BGCOLOR="black">   </TD><TD BGCOLOR="black">   </TD></TR> 
+<TR><TD BGCOLOR="white">   </TD><TD BGCOLOR="black">   </TD><TD BGCOLOR="white">   </TD><TD BGCOLOR="red">   </TD></TR> 
+<TR><TD BGCOLOR="black">   </TD><TD BGCOLOR="red">   </TD><TD BGCOLOR="white">   </TD><TD BGCOLOR="red">   </TD></TR> 
+</TABLE>>]; 
+0->4
+1->6
+2->1
+2->3
+2->7
+3->8
+6->4
+6->5
+7->6
+7->8
+8->0
+9->2
+
+ }
