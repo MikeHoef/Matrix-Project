@@ -6,7 +6,7 @@ graph [splines=lines]
 graph [ranksep=0.9]
 graph [nodesep=0.4]
 edge [arrowhead=none]
-edge [penwidth=5]
+edge [penwidth=1]
 
 0 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
 <TR><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="slategray">   </TD></TR>

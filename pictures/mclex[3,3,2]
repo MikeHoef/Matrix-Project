@@ -1,0 +1,33 @@
+digraph G{
+ node [shape=plaintext] 
+ 
+ rankdir="BT" 
+graph [splines=lines] 
+graph [ranksep=0.1] 
+graph [nodesep=0.4] 
+edge [arrowhead=none] 
+
+0 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"> 
+<TR><TD BGCOLOR="lightgoldenrodyellow">   </TD><TD BGCOLOR="lightgoldenrod4">   </TD><TD BGCOLOR="lightgoldenrod4">   </TD></TR> 
+<TR><TD BGCOLOR="lightgoldenrod4">   </TD><TD BGCOLOR="lightgoldenrodyellow">   </TD><TD BGCOLOR="lightgoldenrod4">   </TD></TR> 
+</TABLE>>]; 
+1 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"> 
+<TR><TD BGCOLOR="lightgoldenrodyellow">   </TD><TD BGCOLOR="lightgoldenrodyellow">   </TD><TD BGCOLOR="lightgoldenrod4">   </TD></TR> 
+<TR><TD BGCOLOR="lightgoldenrodyellow">   </TD><TD BGCOLOR="lightgoldenrod4">   </TD><TD BGCOLOR="lightgoldenrodyellow">   </TD></TR> 
+<TR><TD BGCOLOR="lightgoldenrod4">   </TD><TD BGCOLOR="lightgoldenrodyellow">   </TD><TD BGCOLOR="lightgoldenrodyellow">   </TD></TR> 
+</TABLE>>]; 
+2 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"> 
+<TR><TD BGCOLOR="lightgoldenrodyellow">   </TD><TD BGCOLOR="lightgoldenrodyellow">   </TD><TD BGCOLOR="lightgoldenrod4">   </TD></TR> 
+<TR><TD BGCOLOR="lightgoldenrodyellow">   </TD><TD BGCOLOR="lightgoldenrod4">   </TD><TD BGCOLOR="lightgoldenrod4">   </TD></TR> 
+<TR><TD BGCOLOR="lightgoldenrod4">   </TD><TD BGCOLOR="lightgoldenrodyellow">   </TD><TD BGCOLOR="lightgoldenrod4">   </TD></TR> 
+</TABLE>>]; 
+3 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"> 
+<TR><TD BGCOLOR="lightgoldenrodyellow">   </TD><TD BGCOLOR="lightgoldenrod4">   </TD><TD BGCOLOR="lightgoldenrod4">   </TD></TR> 
+<TR><TD BGCOLOR="lightgoldenrod4">   </TD><TD BGCOLOR="lightgoldenrodyellow">   </TD><TD BGCOLOR="lightgoldenrod4">   </TD></TR> 
+<TR><TD BGCOLOR="lightgoldenrod4">   </TD><TD BGCOLOR="lightgoldenrod4">   </TD><TD BGCOLOR="lightgoldenrodyellow">   </TD></TR> 
+</TABLE>>]; 
+2->1
+2->3
+3->0
+
+ }

@@ -1,0 +1,158 @@
+digraph G{
+ node [shape=plaintext] 
+ 
+ rankdir="BT" 
+graph [splines=lines] 
+graph [ranksep=0.1] 
+graph [nodesep=0.2] 
+edge [arrowhead=none] 
+
+0 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"> 
+<TR><TD BGCOLOR="lightgoldenrodyellow">   </TD><TD BGCOLOR="lightgoldenrod4">   </TD><TD BGCOLOR="lightgoldenrod4">   </TD></TR> 
+<TR><TD BGCOLOR="lightgoldenrod4">   </TD><TD BGCOLOR="lightgoldenrodyellow">   </TD><TD BGCOLOR="lightgoldenrod4">   </TD></TR> 
+</TABLE>>]; 
+1 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"> 
+<TR><TD BGCOLOR="lightgoldenrodyellow">   </TD><TD BGCOLOR="lightgoldenrodyellow">   </TD><TD BGCOLOR="lightgoldenrod4">   </TD></TR> 
+<TR><TD BGCOLOR="lightgoldenrodyellow">   </TD><TD BGCOLOR="lightgoldenrod4">   </TD><TD BGCOLOR="lightgoldenrodyellow">   </TD></TR> 
+<TR><TD BGCOLOR="lightgoldenrod4">   </TD><TD BGCOLOR="lightgoldenrodyellow">   </TD><TD BGCOLOR="lightgoldenrodyellow">   </TD></TR> 
+</TABLE>>]; 
+2 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"> 
+<TR><TD BGCOLOR="lightgoldenrodyellow">   </TD><TD BGCOLOR="lightgoldenrodyellow">   </TD><TD BGCOLOR="lightgoldenrod4">   </TD></TR> 
+<TR><TD BGCOLOR="lightgoldenrodyellow">   </TD><TD BGCOLOR="lightgoldenrod4">   </TD><TD BGCOLOR="lightgoldenrod4">   </TD></TR> 
+<TR><TD BGCOLOR="lightgoldenrod4">   </TD><TD BGCOLOR="lightgoldenrodyellow">   </TD><TD BGCOLOR="lightgoldenrod4">   </TD></TR> 
+</TABLE>>]; 
+3 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"> 
+<TR><TD BGCOLOR="lightgoldenrodyellow">   </TD><TD BGCOLOR="lightgoldenrod4">   </TD><TD BGCOLOR="lightgoldenrod4">   </TD></TR> 
+<TR><TD BGCOLOR="lightgoldenrod4">   </TD><TD BGCOLOR="lightgoldenrodyellow">   </TD><TD BGCOLOR="lightgoldenrod4">   </TD></TR> 
+<TR><TD BGCOLOR="lightgoldenrod4">   </TD><TD BGCOLOR="lightgoldenrod4">   </TD><TD BGCOLOR="lightgoldenrodyellow">   </TD></TR> 
+</TABLE>>]; 
+4 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"> 
+<TR><TD BGCOLOR="lightgoldenrodyellow">   </TD><TD BGCOLOR="lightgoldenrodyellow">   </TD><TD BGCOLOR="lightgoldenrodyellow">   </TD><TD BGCOLOR="lightgoldenrod4">   </TD></TR> 
+<TR><TD BGCOLOR="lightgoldenrodyellow">   </TD><TD BGCOLOR="lightgoldenrod4">   </TD><TD BGCOLOR="lightgoldenrod4">   </TD><TD BGCOLOR="lightgoldenrodyellow">   </TD></TR> 
+<TR><TD BGCOLOR="lightgoldenrod4">   </TD><TD BGCOLOR="lightgoldenrodyellow">   </TD><TD BGCOLOR="lightgoldenrod4">   </TD><TD BGCOLOR="lightgoldenrodyellow">   </TD></TR> 
+</TABLE>>]; 
+5 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"> 
+<TR><TD BGCOLOR="lightgoldenrodyellow">   </TD><TD BGCOLOR="lightgoldenrodyellow">   </TD><TD BGCOLOR="lightgoldenrod4">   </TD><TD BGCOLOR="lightgoldenrod4">   </TD></TR> 
+<TR><TD BGCOLOR="lightgoldenrodyellow">   </TD><TD BGCOLOR="lightgoldenrod4">   </TD><TD BGCOLOR="lightgoldenrodyellow">   </TD><TD BGCOLOR="lightgoldenrod4">   </TD></TR> 
+<TR><TD BGCOLOR="lightgoldenrod4">   </TD><TD BGCOLOR="lightgoldenrodyellow">   </TD><TD BGCOLOR="lightgoldenrodyellow">   </TD><TD BGCOLOR="lightgoldenrod4">   </TD></TR> 
+</TABLE>>]; 
+6 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"> 
+<TR><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="slategray">   </TD></TR> 
+<TR><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="slategray">   </TD></TR> 
+<TR><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="darkslategray">   </TD></TR> 
+</TABLE>>]; 
+7 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"> 
+<TR><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="darkslategray">   </TD></TR> 
+<TR><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="slategray">   </TD></TR> 
+<TR><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="darkslategray">   </TD><TD BGCOLOR="darkslategray">   </TD></TR> 
+</TABLE>>]; 
+8 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"> 
+<TR><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="slategray">   </TD></TR> 
+<TR><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="slategray">   </TD></TR> 
+<TR><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="darkslategray">   </TD><TD BGCOLOR="darkslategray">   </TD><TD BGCOLOR="whitesmoke">   </TD></TR> 
+</TABLE>>]; 
+9 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"> 
+<TR><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="slategray">   </TD></TR> 
+<TR><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="darkslategray">   </TD><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="darkslategray">   </TD></TR> 
+<TR><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="slategray">   </TD></TR> 
+</TABLE>>]; 
+10 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"> 
+<TR><TD BGCOLOR="lightgoldenrodyellow">   </TD><TD BGCOLOR="lightgoldenrodyellow">   </TD><TD BGCOLOR="lightgoldenrodyellow">   </TD><TD BGCOLOR="lightgoldenrod4">   </TD><TD BGCOLOR="lightgoldenrod4">   </TD></TR> 
+<TR><TD BGCOLOR="lightgoldenrodyellow">   </TD><TD BGCOLOR="lightgoldenrod4">   </TD><TD BGCOLOR="lightgoldenrod4">   </TD><TD BGCOLOR="lightgoldenrodyellow">   </TD><TD BGCOLOR="lightgoldenrodyellow">   </TD></TR> 
+<TR><TD BGCOLOR="lightgoldenrod4">   </TD><TD BGCOLOR="lightgoldenrodyellow">   </TD><TD BGCOLOR="lightgoldenrod4">   </TD><TD BGCOLOR="lightgoldenrodyellow">   </TD><TD BGCOLOR="lightgoldenrod4">   </TD></TR> 
+</TABLE>>]; 
+11 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"> 
+<TR><TD BGCOLOR="lightgoldenrodyellow">   </TD><TD BGCOLOR="lightgoldenrodyellow">   </TD><TD BGCOLOR="lightgoldenrodyellow">   </TD><TD BGCOLOR="lightgoldenrod4">   </TD><TD BGCOLOR="lightgoldenrod4">   </TD></TR> 
+<TR><TD BGCOLOR="lightgoldenrodyellow">   </TD><TD BGCOLOR="lightgoldenrod4">   </TD><TD BGCOLOR="lightgoldenrod4">   </TD><TD BGCOLOR="lightgoldenrodyellow">   </TD><TD BGCOLOR="lightgoldenrod4">   </TD></TR> 
+<TR><TD BGCOLOR="lightgoldenrod4">   </TD><TD BGCOLOR="lightgoldenrodyellow">   </TD><TD BGCOLOR="lightgoldenrod4">   </TD><TD BGCOLOR="lightgoldenrodyellow">   </TD><TD BGCOLOR="lightgoldenrod4">   </TD></TR> 
+</TABLE>>]; 
+12 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"> 
+<TR><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="slategray">   </TD></TR> 
+<TR><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="slategray">   </TD></TR> 
+<TR><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="darkslategray">   </TD><TD BGCOLOR="darkslategray">   </TD><TD BGCOLOR="slategray">   </TD></TR> 
+</TABLE>>]; 
+13 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"> 
+<TR><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="slategray">   </TD></TR> 
+<TR><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="darkslategray">   </TD><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="darkslategray">   </TD></TR> 
+<TR><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="darkslategray">   </TD><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="darkslategray">   </TD></TR> 
+</TABLE>>]; 
+14 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"> 
+<TR><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="slategray">   </TD></TR> 
+<TR><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="darkslategray">   </TD><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="darkslategray">   </TD></TR> 
+<TR><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="darkslategray">   </TD><TD BGCOLOR="darkslategray">   </TD><TD BGCOLOR="whitesmoke">   </TD></TR> 
+</TABLE>>]; 
+15 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"> 
+<TR><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="darkslategray">   </TD><TD BGCOLOR="darkslategray">   </TD></TR> 
+<TR><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="slategray">   </TD></TR> 
+<TR><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="darkslategray">   </TD><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="darkslategray">   </TD></TR> 
+</TABLE>>]; 
+16 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"> 
+<TR><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="darkslategray">   </TD><TD BGCOLOR="grey2">   </TD></TR> 
+<TR><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="darkslategray">   </TD><TD BGCOLOR="darkslategray">   </TD></TR> 
+<TR><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="darkslategray">   </TD><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="darkslategray">   </TD></TR> 
+</TABLE>>]; 
+17 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"> 
+<TR><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="darkslategray">   </TD><TD BGCOLOR="darkslategray">   </TD></TR> 
+<TR><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="whitesmoke">   </TD></TR> 
+<TR><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="slategray">   </TD></TR> 
+</TABLE>>]; 
+18 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"> 
+<TR><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="darkslategray">   </TD><TD BGCOLOR="darkslategray">   </TD></TR> 
+<TR><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="slategray">   </TD></TR> 
+<TR><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="darkslategray">   </TD><TD BGCOLOR="darkslategray">   </TD><TD BGCOLOR="slategray">   </TD></TR> 
+</TABLE>>]; 
+19 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"> 
+<TR><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="darkslategray">   </TD><TD BGCOLOR="darkslategray">   </TD></TR> 
+<TR><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="darkslategray">   </TD><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="darkslategray">   </TD></TR> 
+<TR><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="darkslategray">   </TD><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="darkslategray">   </TD></TR> 
+</TABLE>>]; 
+20 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"> 
+<TR><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="darkslategray">   </TD><TD BGCOLOR="darkslategray">   </TD></TR> 
+<TR><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="darkslategray">   </TD><TD BGCOLOR="darkslategray">   </TD><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="slategray">   </TD></TR> 
+<TR><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="slategray">   </TD></TR> 
+</TABLE>>]; 
+21 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"> 
+<TR><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="slategray">   </TD></TR> 
+<TR><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="darkslategray">   </TD><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="darkslategray">   </TD></TR> 
+<TR><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="darkslategray">   </TD><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="darkslategray">   </TD><TD BGCOLOR="whitesmoke">   </TD></TR> 
+</TABLE>>]; 
+22 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"> 
+<TR><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="darkslategray">   </TD><TD BGCOLOR="darkslategray">   </TD></TR> 
+<TR><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="whitesmoke">   </TD><TD BGCOLOR="darkslategray">   </TD><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="darkslategray">   </TD></TR> 
+<TR><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="darkslategray">   </TD><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="darkslategray">   </TD><TD BGCOLOR="whitesmoke">   </TD></TR> 
+</TABLE>>]; 
+0->13
+1->6
+1->13
+2->1
+2->3
+2->9
+3->8
+4->17
+5->11
+6->15
+7->19
+8->14
+9->6
+9->8
+9->18
+12->0
+12->5
+13->4
+14->0
+15->4
+15->20
+16->7
+17->10
+17->11
+18->14
+18->15
+18->21
+19->2
+19->22
+20->5
+20->17
+21->12
+22->0
+
+ }
