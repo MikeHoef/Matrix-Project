@@ -8,8 +8,7 @@ from .matrix import *
 
 
 
-# A representative list of non-degenerate matrices with at most n rows, m columns and k variables.
-
+# returns a representative list of non-degenerate matrices with at most n rows, m columns and k variables. 
 def mclex(n,m,k):
 
     # base conditions.

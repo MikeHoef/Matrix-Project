@@ -101,6 +101,6 @@ def hasse(Matrices, Relations=None, view=True, name=None, orient='BT', splines='
     graph = graphviz.Source(Source)
 
     if name == None:
-        graph.view(directory='./temp', cleanup=True)
+        graph.view(directory='./python_files/temp', cleanup=True)
     else:
-        graph.render(name, './python_files/pictures', view, False, 'png')
+        graph.render(name, './python_files/pictures', view, False, 'png', cleanup=True)
