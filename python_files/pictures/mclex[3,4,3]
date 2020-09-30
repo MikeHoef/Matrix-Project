@@ -1,0 +1,72 @@
+digraph G{
+ node [shape=plaintext] 
+ 
+ rankdir="BT" 
+graph [splines=lines] 
+graph [ranksep=0.3] 
+graph [nodesep=0.4] 
+edge [arrowhead=none] 
+
+0 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"> 
+<TR><TD BGCOLOR="seashell">   </TD><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="slategray">   </TD></TR> 
+<TR><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="seashell">   </TD><TD BGCOLOR="slategray">   </TD></TR> 
+</TABLE>>]; 
+1 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"> 
+<TR><TD BGCOLOR="seashell">   </TD><TD BGCOLOR="seashell">   </TD><TD BGCOLOR="slategray">   </TD></TR> 
+<TR><TD BGCOLOR="seashell">   </TD><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="seashell">   </TD></TR> 
+<TR><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="seashell">   </TD><TD BGCOLOR="seashell">   </TD></TR> 
+</TABLE>>]; 
+2 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"> 
+<TR><TD BGCOLOR="seashell">   </TD><TD BGCOLOR="seashell">   </TD><TD BGCOLOR="slategray">   </TD></TR> 
+<TR><TD BGCOLOR="seashell">   </TD><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="slategray">   </TD></TR> 
+<TR><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="seashell">   </TD><TD BGCOLOR="slategray">   </TD></TR> 
+</TABLE>>]; 
+3 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"> 
+<TR><TD BGCOLOR="seashell">   </TD><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="slategray">   </TD></TR> 
+<TR><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="seashell">   </TD><TD BGCOLOR="slategray">   </TD></TR> 
+<TR><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="seashell">   </TD></TR> 
+</TABLE>>]; 
+4 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"> 
+<TR><TD BGCOLOR="seashell">   </TD><TD BGCOLOR="seashell">   </TD><TD BGCOLOR="seashell">   </TD><TD BGCOLOR="slategray">   </TD></TR> 
+<TR><TD BGCOLOR="seashell">   </TD><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="seashell">   </TD></TR> 
+<TR><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="seashell">   </TD><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="seashell">   </TD></TR> 
+</TABLE>>]; 
+5 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"> 
+<TR><TD BGCOLOR="seashell">   </TD><TD BGCOLOR="seashell">   </TD><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="slategray">   </TD></TR> 
+<TR><TD BGCOLOR="seashell">   </TD><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="seashell">   </TD><TD BGCOLOR="slategray">   </TD></TR> 
+<TR><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="seashell">   </TD><TD BGCOLOR="seashell">   </TD><TD BGCOLOR="slategray">   </TD></TR> 
+</TABLE>>]; 
+6 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"> 
+<TR><TD BGCOLOR="seashell">   </TD><TD BGCOLOR="seashell">   </TD><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="slategray">   </TD></TR> 
+<TR><TD BGCOLOR="seashell">   </TD><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="seashell">   </TD><TD BGCOLOR="slategray">   </TD></TR> 
+<TR><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="seashell">   </TD><TD BGCOLOR="seashell">   </TD><TD BGCOLOR="darkslategray">   </TD></TR> 
+</TABLE>>]; 
+7 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"> 
+<TR><TD BGCOLOR="seashell">   </TD><TD BGCOLOR="seashell">   </TD><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="darkslategray">   </TD></TR> 
+<TR><TD BGCOLOR="seashell">   </TD><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="seashell">   </TD><TD BGCOLOR="slategray">   </TD></TR> 
+<TR><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="seashell">   </TD><TD BGCOLOR="darkslategray">   </TD><TD BGCOLOR="darkslategray">   </TD></TR> 
+</TABLE>>]; 
+8 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"> 
+<TR><TD BGCOLOR="seashell">   </TD><TD BGCOLOR="seashell">   </TD><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="slategray">   </TD></TR> 
+<TR><TD BGCOLOR="seashell">   </TD><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="seashell">   </TD><TD BGCOLOR="slategray">   </TD></TR> 
+<TR><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="darkslategray">   </TD><TD BGCOLOR="darkslategray">   </TD><TD BGCOLOR="seashell">   </TD></TR> 
+</TABLE>>]; 
+9 [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"> 
+<TR><TD BGCOLOR="seashell">   </TD><TD BGCOLOR="seashell">   </TD><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="slategray">   </TD></TR> 
+<TR><TD BGCOLOR="seashell">   </TD><TD BGCOLOR="darkslategray">   </TD><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="darkslategray">   </TD></TR> 
+<TR><TD BGCOLOR="slategray">   </TD><TD BGCOLOR="seashell">   </TD><TD BGCOLOR="seashell">   </TD><TD BGCOLOR="slategray">   </TD></TR> 
+</TABLE>>]; 
+0->4
+1->6
+2->1
+2->3
+2->9
+3->8
+6->4
+6->5
+7->2
+8->0
+9->6
+9->8
+
+ }
