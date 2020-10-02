@@ -2,10 +2,9 @@ import itertools
 import time
 import os.path
 
-
+# helper method used throughout.
 def hom(k, n):
     return list(itertools.product(range(n), repeat=k))
-
 
 class matrix:
 

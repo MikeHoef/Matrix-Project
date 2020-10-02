@@ -76,30 +76,27 @@ def mclex_relations(n,m,k):
     if os.path.isfile(path_rels):
         return read_in_relations(n,m,k)
 
-    path = './python_files/data/mclex[' + str(n) + ',' + str(m) + ',' + str(k) + '].mc'
+    print(' --- generating relations -- ')
 
-    rels = []
-    if os.path.isfile(path):
+    mats = mclex(n,m,k)
+    for m in mats:
+        for n in mats:
+            if not n == m:
+                if implies(n,m):
+                    rels.append((n,m))
 
-        mats = read_in_matrices(open(path, 'r'))
-        print(' --- generating relations -- ')
-        for m in mats:
-            for n in mats:
-                if not n == m:
-                    if implies(n,m):
-                        rels.append((n,m))
-        f = open(path_rels, 'w')
+    f = open(path_rels, 'w')
 
-        for r in rels:
-            write_matrix(r[0],f)
-            write_matrix(r[1],f)
+    for r in rels:
+        write_matrix(r[0],f)
+        write_matrix(r[1],f)
 
-        f.close()
-        return rels
+    f.close()
+    return rels
 
     return mclex_relations(n-1,m,k) + mclex_relations(n,m-1,k) + mclex_relations(n,m,k-1)
 
-# all matrices with at most n rows, m columns and k variables (no refinement).
+# the candidate matrices.
 def matrices(n,m,k):
 
     if k < 2:
@@ -115,7 +112,6 @@ def matrices(n,m,k):
         return matrices(n, k ** n - 1, k)
 
     return matrices(n-1,m,k) + matrices(n,m-1,k) + matrices(n,m,k-1) + strict_matrices(n,m,k)
-
 # a matrix is (n,m,k)-strict if it has n rows, m columns (no duplicates).
 # moreover it must satisfy a further condition on the number of occurences of its variables.
 def strict_matrices(n,m,k):
